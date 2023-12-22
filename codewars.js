@@ -5,3 +5,7 @@ function getMiddle(s) {
       return s.slice(s.length / 2, s.length / 2 + 1)
     }
   }
+
+
+
+  const filter_list = (list) => list.filter((x) => typeof x === 'number')
