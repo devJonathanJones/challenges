@@ -9,3 +9,7 @@ function getMiddle(s) {
 
 
   const filter_list = (list) => list.filter((x) => typeof x === 'number')
+
+
+
+  const isSquare = (num) => Math.sqrt(num) % 1 === 0 ? true : false
