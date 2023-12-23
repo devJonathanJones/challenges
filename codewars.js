@@ -13,3 +13,12 @@ function getMiddle(s) {
 
 
   const isSquare = (num) => Math.sqrt(num) % 1 === 0 ? true : false
+
+
+
+  function XO(str) {
+    let xCount = 0
+    let oCount = 0
+    str.split('').map((x) => x.toLowerCase() === 'x' ? xCount++ : x.toLowerCase() === 'o' ? oCount++ : null)
+    return xCount === oCount ? true : false
+  }
