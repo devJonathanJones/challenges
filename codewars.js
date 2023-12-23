@@ -22,3 +22,6 @@ function getMiddle(s) {
     str.split('').map((x) => x.toLowerCase() === 'x' ? xCount++ : x.toLowerCase() === 'o' ? oCount++ : null)
     return xCount === oCount ? true : false
   }
+
+
+  const findShort = (str) => str.split(' ').reduce((a, b) => a.length <= b.length ? a : b).length
