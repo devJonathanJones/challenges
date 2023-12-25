@@ -66,3 +66,12 @@ function DNAStrand(dna){
 
 
 
+function longest(s1, s2) {
+  newArr = []
+  s1.split('').forEach((x) => newArr.includes(x) ? null : newArr.push(x))
+  s2.split('').forEach((x) => newArr.includes(x) ? null : newArr.push(x))
+  return newArr.sort().join('')
+}
+
+
+
