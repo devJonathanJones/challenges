@@ -24,4 +24,15 @@ function getMiddle(s) {
   }
 
 
+  
   const findShort = (str) => str.split(' ').reduce((a, b) => a.length <= b.length ? a : b).length
+
+
+
+  function getSum(a, b) {
+    let sum = 0
+    for (i = Math.min(a, b); i <= Math.max(a, b); i++) {
+      sum += i
+    }
+    return sum
+  }
