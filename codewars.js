@@ -75,3 +75,18 @@ function longest(s1, s2) {
 
 
 
+function accum(s) {
+  let newArr = []
+  s.split('').map((x, i) => {
+    let str = x.toLowerCase().repeat(i + 1);
+    newArr.push(str.charAt(0).toUpperCase() + str.slice(1));
+  })
+  return newArr.join('-')
+}
+
+
+
+const friend = (friends) => friends.filter((name) => name.length === 4)
+
+
+
