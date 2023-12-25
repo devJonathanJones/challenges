@@ -8,31 +8,41 @@ function getMiddle(s) {
 
 
 
-  const filter_list = (list) => list.filter((x) => typeof x === 'number')
+const filter_list = (list) => list.filter((x) => typeof x === 'number')
 
 
 
-  const isSquare = (num) => Math.sqrt(num) % 1 === 0 ? true : false
+const isSquare = (num) => Math.sqrt(num) % 1 === 0 ? true : false
 
 
 
-  function XO(str) {
-    let xCount = 0
-    let oCount = 0
-    str.split('').map((x) => x.toLowerCase() === 'x' ? xCount++ : x.toLowerCase() === 'o' ? oCount++ : null)
-    return xCount === oCount ? true : false
+function XO(str) {
+  let xCount = 0
+  let oCount = 0
+  str.split('').map((x) => x.toLowerCase() === 'x' ? xCount++ : x.toLowerCase() === 'o' ? oCount++ : null)
+  return xCount === oCount ? true : false
+}
+
+
+
+const findShort = (str) => str.split(' ').reduce((a, b) => a.length <= b.length ? a : b).length
+
+
+
+function getSum(a, b) {
+  let sum = 0
+  for (i = Math.min(a, b); i <= Math.max(a, b); i++) {
+    sum += i
   }
-
-
-  
-  const findShort = (str) => str.split(' ').reduce((a, b) => a.length <= b.length ? a : b).length
+  return sum
+}
 
 
 
-  function getSum(a, b) {
-    let sum = 0
-    for (i = Math.min(a, b); i <= Math.max(a, b); i++) {
-      sum += i
-    }
-    return sum
-  }
+function sumTwoSmallestNumbers(numbers) {  
+  numbers.sort((a, b) => a - b)
+  return numbers[0] + numbers[1]
+}
+
+
+
