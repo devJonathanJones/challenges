@@ -46,3 +46,23 @@ function sumTwoSmallestNumbers(numbers) {
 
 
 
+function DNAStrand(dna){
+  let newArr = []
+  dna.split('').forEach((x) => {
+    if (x === 'A') {
+      newArr.push('T')
+    } else if (x === 'T') {
+      newArr.push('A')
+    } else if (x === 'G') {
+      newArr.push('C')
+    } else if (x === 'C') {
+      newArr.push('G')
+    } else {
+      newArr.push(x)
+    }
+  })
+  return newArr.join('')
+}
+
+
+
