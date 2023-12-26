@@ -90,3 +90,17 @@ const friend = (friends) => friends.filter((name) => name.length === 4)
 
 
 
+function openOrSenior(data){
+  let newArr = []
+  data.forEach((x) => {
+    if (x[0] > 54 && x[1] > 7) {
+      newArr.push('Senior') 
+    } else {
+      newArr.push('Open')
+    }
+  })
+  return newArr
+}
+
+
+
