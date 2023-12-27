@@ -114,3 +114,19 @@ function findNextSquare(sq) {
 
 
 
+var uniqueInOrder=function(iterable){
+  let newArr = []
+  if (Array.isArray(iterable)){
+    iterable.forEach((itm, ind) => {
+      itm === iterable[ind - 1] ? null : newArr.push(itm)
+    })
+  } else {
+    iterable.split('').forEach((itm, ind) => {
+      itm === iterable[ind - 1] ? null : newArr.push(itm)
+    })
+  }
+  return newArr
+}
+
+
+
