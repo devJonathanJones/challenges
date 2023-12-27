@@ -153,3 +153,11 @@ function smallEnough(a, limit){
 
 
 
+function divisibleBy(numbers, divisor){
+  let newArr = []
+  numbers.forEach((x) => x % divisor === 0 ? newArr.push(x) : null)
+  return newArr
+}
+
+
+
