@@ -130,3 +130,16 @@ var uniqueInOrder=function(iterable){
 
 
 
+function createPhoneNumber(numbers){
+  return `(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}`
+}
+
+
+
+function oddOrEven(array) {
+  if (array.length === 0) {
+    return 'even'
+  } else {
+    return array.reduce((acc, val) => acc + val, 0) % 2 === 0 ? 'even' : 'odd'
+  }
+}
