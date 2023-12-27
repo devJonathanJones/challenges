@@ -143,3 +143,13 @@ function oddOrEven(array) {
     return array.reduce((acc, val) => acc + val, 0) % 2 === 0 ? 'even' : 'odd'
   }
 }
+
+
+
+function smallEnough(a, limit){
+  a.sort((num1, num2) => num1 - num2)
+  return a[a.length - 1] <= limit ? true : false
+}
+
+
+
