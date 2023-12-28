@@ -165,3 +165,12 @@ const getAverage = (marks) => Math.floor(marks.reduce((acc, val) => acc + val, 0
 
 
 
+function printerError(s) {
+  const validCodes = 'abcdefghijklm'
+  let errors = 0
+  s.split('').forEach((x) => !validCodes.includes(x) ? errors++ : null)
+  return `${errors}/${s.length}`
+}
+
+
+
