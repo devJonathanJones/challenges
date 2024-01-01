@@ -192,3 +192,11 @@ const solution = (str, ending) => str.slice(-Math.abs(ending.length)) === ending
 
 
 
+function reverseWords(str) {
+  let newArr = []
+  str.split(' ').forEach((x) => newArr.push(x.split('').reverse().join('')))
+  return newArr.join(' ')
+}
+
+
+
