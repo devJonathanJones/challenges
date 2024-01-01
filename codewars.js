@@ -188,3 +188,7 @@ function isTriangle (a, b, c) {
 
 
 
+const solution = (str, ending) => str.slice(-Math.abs(ending.length)) === ending ? true : ending.length === 0 ? true : false
+
+
+
