@@ -200,3 +200,13 @@ function reverseWords(str) {
 
 
 
+var number=function(array){
+  if (array.length === 0) {
+    return []
+  } else {
+    return array.map((x, i) => `${i + 1}: ${x}`)
+  }
+}
+
+
+
