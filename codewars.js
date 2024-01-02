@@ -210,3 +210,7 @@ var number=function(array){
 
 
 
+const minMax = (arr) => [Math.min(...arr), Math.max(...arr)]
+
+
+
