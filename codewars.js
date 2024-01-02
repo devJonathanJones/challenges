@@ -222,3 +222,7 @@ const solution = (nums) => nums === null ? [] : nums.sort((a, b) => a - b)
 
 
 
+const removeUrlAnchor = (url) => url.split('#')[0]
+
+
+
