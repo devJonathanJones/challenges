@@ -1,0 +1,1 @@
+const binaryArrayToNumber = (arr) => Number(`0b${arr.join('')}`)
