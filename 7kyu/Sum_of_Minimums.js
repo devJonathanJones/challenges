@@ -1,0 +1,1 @@
+const sumOfMinimums = (arr) => arr.reduce((acc, val) => acc + Math.min(...val), 0)
