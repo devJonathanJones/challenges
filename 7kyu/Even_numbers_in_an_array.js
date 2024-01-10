@@ -1,0 +1,1 @@
+const evenNumbers = (arr, num) => arr.filter((x) => x % 2 === 0).slice(-num)
