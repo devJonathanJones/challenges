@@ -1,0 +1,1 @@
+const noOdds = (n) => n.filter((x) => x % 2 === 0)
