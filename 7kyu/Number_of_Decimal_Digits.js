@@ -1,0 +1,1 @@
+const digits = (num) => String(num).split('').length
