@@ -1,0 +1,1 @@
+const xor = (a, b) => a === b ? false : a || b === true ? true : false
