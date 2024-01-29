@@ -1,0 +1,1 @@
+const combat = (h, d) => h - d < 0 ? 0 : h - d
